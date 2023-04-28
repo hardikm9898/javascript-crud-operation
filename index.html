@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud_Operation</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+  
+    <div class="container">
+      <div class="inputdisplay">
+        <form class="form1">
+          <label>ProductID</label>
+          <input class="productID" type="number" required />
+          <label>Product Name</label>
+          <input class="productName" type="text" required />
+          <label>Product Image</label>
+            <input accept="image/*" class="productImage"  type='file' id="imgInp" />
+            <img id="blah" src="#" alt="your image" />
+          <label>Product Price</label>
+          <input class="productPrice" type="number" required />
+          <label>Add Description</label>
+          <textarea
+            class="productDescription"
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"></textarea>
+          <input class="submit" type="submit" required />
+        </form>
+      </div>
+
+      <div class="entrydisplay">
+        <div class="selectsection">
+                 <form action="" method="post" class="form2">
+
+          <input  class="search" type="search" placeholder="filter by Id" />
+          <input  class="searchSubmit" type="submit"/>
+        </form>
+          <label for="cars">Sort Product:</label>
+          <select>
+            <option  value="sortId" class="sortId">Sort by Id</option>
+            <option value="sortName"class="sortName">Sort by Name</option>
+            <option value="sortPrice" class="sortPrice">Sort By Price</option>
+          </select>
+        </div>
+        <table style="width: 100%; border: 2px solid black">
+          <thead>
+            <tr>
+              <th>ProductID</th>
+              <th>Product Name</th>
+              <th>Product Image</th>
+              <th>Product Price</th>
+              <th>Description</th>
+              <th>Operation</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyElement"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script defer type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
