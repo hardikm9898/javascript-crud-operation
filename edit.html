@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+
+form input{
+  color: rgb(255, 255, 255);
+  background-color: #2e302e;
+  border: 2px solid black;
+border-radius: 8px;
+outline: none;
+font-size: large;
+
+  width: 15vw;
+  height: 70px;
+}
+
+form img{
+  width: 10vw;
+ height: 10vh;
+}
+
+
+  </style>
+
+  <body>
+    <div class="editentry">
+      <h1>Edit here</h1>
+
+      <form action="index.html">
+        <label>ProductID</label>
+        <input class="productID" type="number" required />
+        <label>Product Name</label>
+        <input class="productName" type="text" required />
+        <label>Product Image</label>
+        <input accept="image/*" class="productImage" type="file" id="imgInp" required />
+        <img id="blah" alt="your image" />
+        <label>Product Price</label>
+        <input class="productPrice" type="number" required />
+        <label>Add Description</label>
+        <textarea
+          class="productDescription"
+          name="description"
+          id="description"
+          cols="30"
+          rows="10"></textarea>
+        <input class="submit" type="submit" required />
+      </form>
+    </div>
+<script></script>
+    <script src="./edit.js"></script>
+  </body>
+</html>
